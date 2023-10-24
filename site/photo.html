@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" href="img/calculatrice.png" />
+    <title>Mahjong Calculator</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<header>
+    <nav>
+
+        <div id="nav_GD">
+            <p id="cote" ><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span></p>
+        </div>
+
+        <div id="nav_M">
+            <p>Mahjong Calculator</p>
+        </div>
+
+
+    </nav>
+</header>
+
+
+<body>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Accueil</a>
+        <a href="calcul.html">Calcul</a>
+        <a href="photo.html">Photo</a>
+      </div>
+      
+      
+    <div id="photo-haut">
+        <a href="index.html">←</a><p id="detec">Détection automatique des tuiles </p>
+     </div>
+
+    <div id="camera">
+        <video autoplay muted playsinline id="videoLive"></video>
+    </div>
+
+    <div id="div-bas">
+        <p>Prenez une photo de votre jeu ou importez une image</p>
+        <input type="file" name="file" id="file" class="inputfile" />
+
+        <div id="div-long">
+            <label id="file-bas" for="file"><img src="img/document.png"></label>
+            <input type="image" id="bouton" alt="bouton pour prendre la photo" src="img/logo_photo.png" />
+        </div>
+        
+    </div>
+
+    
+  
+
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="js/video.js"></script>
+</html>
